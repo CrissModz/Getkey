@@ -1,0 +1,25 @@
+<!-- Drawables para el tema cyberpunk en Android -->
+
+<!-- drawable/edit_text_cyberpunk.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="2dp"
+                android:color="#00d9ff" />
+            <solid android:color="#1a1f3a" />
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+</layer-list>
+
+<!-- drawable/button_cyberpunk.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="#00ff41"
+        android:endColor="#00d9ff"
+        android:angle="45" />
+    <corners android:radius="0dp" />
+</shape>
