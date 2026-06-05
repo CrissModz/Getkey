@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generador de Key - Herramienta para generar claves únicas y seguras">
+    <meta name="author" content="CrissModz">
+    <title>Getkey - Generador de Claves Cyberpunk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🔑 Getkey</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#features">Características</a></li>
+                <li><a href="#generator">Generador</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Generador de Claves Seguras</h1>
+                <p>Crea claves aleatorias, únicas y seguras en 3 simples pasos</p>
+                <button class="btn btn-primary" onclick="document.getElementById('generator').scrollIntoView({ behavior: 'smooth' })">Acceder al Sistema</button>
+            </div>
+            <div class="hero-image">
+                <div class="key-icon">🔐</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Características</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Rápido</h3>
+                    <p>Genera claves en milisegundos</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Seguro</h3>
+                    <p>Criptografía de alta calidad</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Personalizable</h3>
+                    <p>Ajusta longitud y caracteres</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Copiar fácilmente</h3>
+                    <p>Copia al portapapeles con un click</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Sin límite</h3>
+                    <p>Genera todas las claves que necesites</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Online</h3>
+                    <p>Funciona directamente en tu navegador</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Generator Section -->
+    <section id="generator" class="generator">
+        <div class="container">
+            <h2>Generador de Claves</h2>
+            
+            <!-- Steps Indicator -->
+            <div class="steps-container">
+                <div class="steps-indicator">
+                    <div class="step" id="step1">
+                        <div class="step-number">1</div>
+                        <div class="step-label">WhatsApp</div>
+                    </div>
+                    <div class="step-connector" id="connector1"></div>
+                    <div class="step" id="step2">
+                        <div class="step-number">2</div>
+                        <div class="step-label">YouTube</div>
+                    </div>
+                    <div class="step-connector" id="connector2"></div>
+                    <div class="step" id="step3">
+                        <div class="step-number">3</div>
+                        <div class="step-label">Generar</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="generator-card">
+                <!-- Step 1: Follow WhatsApp -->
+                <div class="step-content" id="stepContent1">
+                    <h3>Paso 1: Sigue nuestro Canal de WhatsApp</h3>
+                    <p>Para acceder al generador de claves, primero debes seguir nuestro canal de WhatsApp donde compartimos actualizaciones y contenido exclusivo.</p>
+                    
+                    <div class="social-section">
+                        <div class="social-icon">💬</div>
+                        <h4>Canal de WhatsApp</h4>
+                        <p>Obtén acceso a contenido exclusivo y actualizaciones</p>
+                        <a href="https://whatsapp.com/channel/0029VbBT63UGOj9oDI0IVZ1s" target="_blank" class="btn btn-social btn-whatsapp">
+                            📱 Seguir Canal de WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="verification-section">
+                        <h4>¿Ya seguiste el canal?</h4>
+                        <p>Haz clic en el botón de abajo para verificar que has seguido el canal.</p>
+                        <button class="btn btn-primary" onclick="verifyWhatsApp()">Verificar y Continuar</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Follow YouTube -->
+                <div class="step-content" id="stepContent2" style="display: none;">
+                    <h3>Paso 2: Sigue nuestro Canal de YouTube</h3>
+                    <p>Ahora debes seguir nuestro canal de YouTube para desbloquear el generador de claves. Obtén tutoriales, tips y contenido exclusivo.</p>
+                    
+                    <div class="social-section">
+                        <div class="social-icon">🎥</div>
+                        <h4>Canal de YouTube</h4>
+                        <p>Tutoriales, tips y contenido tecnológico exclusivo</p>
+                        <a href="https://www.youtube.com/@CrissModz" target="_blank" class="btn btn-social btn-youtube">
+                            🎬 Seguir Canal de YouTube
+                        </a>
+                    </div>
+
+                    <div class="verification-section">
+                        <h4>¿Ya seguiste el canal?</h4>
+                        <p>Haz clic en el botón de abajo para verificar que has seguido el canal.</p>
+                        <button class="btn btn-primary" onclick="verifyYouTube()">Verificar y Continuar</button>
+                    </div>
+
+                    <div class="step-actions">
+                        <button class="btn btn-secondary" onclick="goToStep(1)">← Atrás</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Generate Key -->
+                <div class="step-content" id="stepContent3" style="display: none;">
+                    <h3>Paso 3: Configura y Genera tu Clave</h3>
+
+                    <div class="options">
+                        <div class="option-group">
+                            <label for="length">Longitud de la clave:</label>
+                            <div class="length-control">
+                                <input type="range" id="length" min="8" max="128" value="32" class="slider">
+                                <input type="number" id="lengthValue" min="8" max="128" value="32" class="length-input">
+                            </div>
+                        </div>
+
+                        <div class="option-group">
+                            <label>Tipos de caracteres:</label>
+                            <div class="checkboxes">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="uppercase" checked>
+                                    <label for="uppercase">Mayúsculas (A-Z)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="lowercase" checked>
+                                    <label for="lowercase">Minúsculas (a-z)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="numbers" checked>
+                                    <label for="numbers">Números (0-9)</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="symbols" checked>
+                                    <label for="symbols">Símbolos (!@#$%^&*)</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Display and Controls -->
+                    <div class="key-display">
+                        <input type="text" id="keyOutput" readonly placeholder="Tu clave generada aparecerá aquí">
+                        <button class="btn btn-icon" id="copyBtn" onclick="copyToClipboard()" title="Copiar clave">
+                            📋 Copiar
+                        </button>
+                    </div>
+
+                    <!-- Generate Button -->
+                    <button class="btn btn-primary btn-large" onclick="generateKey()">🔐 Generar Clave Ahora</button>
+
+                    <!-- History -->
+                    <div class="history-section">
+                        <h3>Histórico de Claves</h3>
+                        <div id="history" class="history-list"></div>
+                        <button class="btn btn-secondary" onclick="clearHistory()" id="clearHistoryBtn" style="display: none;">Limpiar Histórico</button>
+                    </div>
+
+                    <div class="step-actions">
+                        <button class="btn btn-secondary" onclick="goToStep(2)">← Atrás</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Síguenos en Redes</h2>
+            <div class="contact-content">
+                <p>¿Preguntas o sugerencias? ¡Síguenos en nuestras redes sociales!</p>
+                <div class="contact-links">
+                    <a href="https://whatsapp.com/channel/0029VbBT63UGOj9oDI0IVZ1s" class="contact-link" target="_blank">
+                        <span>💬 WhatsApp</span>
+                    </a>
+                    <a href="https://www.youtube.com/@CrissModz" class="contact-link" target="_blank">
+                        <span>🎥 YouTube</span>
+                    </a>
+                    <a href="https://github.com/CrissModz/Getkey" class="contact-link" target="_blank">
+                        <span>🐙 GitHub</span>
+                    </a>
+                    <a href="https://github.com/CrissModz" class="contact-link" target="_blank">
+                        <span>👤 Perfil</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Getkey. Desarrollado por <a href="https://github.com/CrissModz">CrissModz</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
